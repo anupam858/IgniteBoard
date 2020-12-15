@@ -62,6 +62,18 @@ const StyledNav = styled(motion.div)`
         color: white;
     }
 
+    @media (max-aspect-ratio: 1/1){
+        padding: 1rem 2rem;
+
+        input{
+            width: 60%;
+            font-size: 1rem;
+        }
+        button{
+            font-size: 1rem;
+        }
+    }
+
 `;
 
 const Logo = styled(motion.div)`

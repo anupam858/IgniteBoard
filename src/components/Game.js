@@ -42,6 +42,10 @@ const StyledGame = styled(motion.div)`
     height: 40vh;
     object-fit: cover;
   }
+
+  @media (max-aspect-ratio: 1/1){
+    width:90vw;
+  }
 `;
 
 export default Game;

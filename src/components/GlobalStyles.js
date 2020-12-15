@@ -14,8 +14,8 @@ const GlobalStyles = createGlobalStyle`
             background-color: darkgrey;
         }
         &::-webkit-scrollbar-track {
-    background: white;
-  }
+            background: white;
+        }
     }
     body{
         font-family: 'Montserrat', sans-serif;
@@ -31,6 +31,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.3rem;
         color: #333;
         padding: 1rem;
+        padding-left:0rem;
     }
     p{
         font-size: 1.2rem;
@@ -47,6 +48,13 @@ const GlobalStyles = createGlobalStyle`
     input{
         font-weight:bold;
         font-family: "Montserrat", sans-serif;
+    }
+
+    @media (max-aspect-ratio: 1/1){
+        p{
+            font-size: 1rem;
+            line-height:200%;
+        }
     }
 `;
 
