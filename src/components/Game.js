@@ -24,7 +24,9 @@ const Game = ({ name, released, image, id }) => {
       <Link to={`/game/${id}`}>
         <motion.h3 layoutId={`title ${id.toString()}`}>{name}</motion.h3>
         <p>{released}</p>
-        <motion.img src={smallImage(image, 640)} alt={name} layoutId={`image ${id.toString()}`} />
+        {image != null ? (
+          <motion.img src={smallImage(image, 640)} alt={name} layoutId={`image ${id.toString()}`} />)
+          : (<p>No Cover Image </p>)}
       </Link>
     </StyledGame>
   );

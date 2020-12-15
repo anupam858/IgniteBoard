@@ -85,7 +85,9 @@ const GameDetail = ({ pathId }) => {
               </Info>
             </Stats>
             <Media>
-              <motion.img src={smallImage(game.background_image, 1280)} alt={game.background_image} layoutId={`image ${pathId}`} />
+              {game.background_image != null ? (
+                <motion.img src={smallImage(game.background_image, 1280)} alt={game.background_image} layoutId={`image ${pathId}`} />)
+                : (<p>No Cover Image </p>)}
             </Media>
             <Description>
               <p>{game.description_raw}</p>
