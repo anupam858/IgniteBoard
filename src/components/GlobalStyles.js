@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
     h3{
         font-size: 1.3rem;
         color: #333;
-        padding: 1. 0rem;
+        padding: 1rem;
     }
     p{
         font-size: 1.2rem;
@@ -40,6 +40,13 @@ const GlobalStyles = createGlobalStyle`
     a{
         text-decoration: none;
         color: #333;
+    }
+    img{
+        display:block;
+    }
+    input{
+        font-weight:bold;
+        font-family: "Montserrat", sans-serif;
     }
 `;
 
